@@ -22,24 +22,36 @@ module Sample
       end
     end
 
-    # Создаем реализацию обмена для 1С
-    class OneC<Implementator
+    # Создаем реализацию 1
+    class Implemet1<Implementator
       def parse_data
-        p "1c data"
+        p "Run implemet 1"
       end
     end
-    # Создаем реализацию обмена для Sclados
-    class Sclados<Implementator
+    # Создаем реализацию 2
+    class Implemet2<Implementator
       def parse_data
-        p "Sclados data"
+        p "Run implemet 2"
       end
     end
-    # Создаем реализацию обмена для Traider
-    class Traider<Implementator
+    # Создаем реализацию 3
+    class Implemet3<Implementator
       def parse_data
-        p "Traider data"
+        p "Run implemet 3"
       end
     end
 
   end
 end
+
+###########  В работе
+exchange=Exchange.new
+
+exchange.implementator=Implemet1.new
+exchange.parse_data
+
+exchange.implementator=Implemet2.new
+exchange.parse_data
+
+#> Run implemet 1
+#> Run implemet 2
