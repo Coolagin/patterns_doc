@@ -2,4 +2,4 @@
 
 ####Строитель(Builder)
 
-![picture alt](../images/uml-builder.jpg) 
+![picture alt](https://github.com/Coolagin/patterns_doc/raw/master/images/uml-builder.jpg) 
